@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application id="WidgetAlignment" name="WidgetAlignment">
-    <container displayname="Form" id="formDyn" type="form"/>
     <container displayname="Form" id="formHome" type="form">
         <component displayname="TextBox2" id="TestCaseID" type="textbox2"/>
     </container>
+    <container displayname="Form" id="formDyn" type="form"/>
     <globalsequences/>
     <skins/>
 </application>

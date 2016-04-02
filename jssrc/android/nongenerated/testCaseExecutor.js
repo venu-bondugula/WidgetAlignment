@@ -32,38 +32,37 @@ function createList() {
     /*    for (index in obj) {
         testcases += index + " : " + obj[index].toString() + "\n\n";
     }*/
-    formHome.TestCases.text = obj["1"].toLowerCase() + "\n\n";
+    formHome.TestCases.text = obj["1"] + "\n\n";
     formHome.TestCases.text += testcases;
-}
-var testcaseParams = {
-    priority: undefined,
-    type: undefined
-};
-var frmParams = {
-    frmname: undefined,
-    skin: "skn1",
-    caseID: undefined
-};
-
-function sample() {
-    formHome.TestCases.text = constants.WIDGET_ALIGN_TOP_LEFT.toString();
 }
 
 function testcaseNavigator() {
-    /*	formDyn.destroy();
-	formDyn.postShow = null;
-	formDyn.preShow = null;
-    if (formHome['TestCaseID'].text != null){
-    	testID = (formHome['TestCaseID'].text).toString();
-    }else{
-    	alert("TestID is null");
+    formDyn.destroy();
+    formDyn.postShow = null;
+    formDyn.preShow = null;
+    if (formHome['TestCaseID'].text != null) {
+        testID = (formHome['TestCaseID'].text).toString();
+    } else {
+        alert("TestID is null");
     }
-    frmParams.frmname = formDyn;
-    frmParams.caseID = testID;
-
     testID_num = parseInt(testID);
-    frmParams.frmname.TestCaseTitle.text = obj[(testID_num).toString()];
-    frmParams = testcase(frmParams, obj);
-    frmParams.frmname.skin = "frmskn";
-    frmParams.frmname.show();*/
+    testcase(obj[testID]);
+    formDyn.skin = "skn1";
+    formDyn.show();
+}
+
+function nextTestCase() {
+    if (obj.testID.widgetAlignment != 9) {
+        obj.testID.widgetAlignment = obj.testID.widgetAlignment + 1;
+    } else {
+        home();
+    }
+}
+
+function home() {
+    currentForm = kony.application.getCurrentForm();
+    frmHome.show();
+    if (currentForm != frmHome) {
+        currentForm.destroy();
+    }
 }

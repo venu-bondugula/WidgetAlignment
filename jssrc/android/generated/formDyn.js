@@ -1,7 +1,7 @@
 //Form JS File
 function addWidgetsformDyn() {
-    var label685085079821 = new kony.ui.Label({
-        "id": "label685085079821",
+    var testCaseTitle = new kony.ui.Label({
+        "id": "testCaseTitle",
         "isVisible": true,
         "text": "Label",
         "skin": "lblNormal"
@@ -19,7 +19,7 @@ function addWidgetsformDyn() {
         "textCopyable": false
     });
     formDyn.add(
-    label685085079821);
+    testCaseTitle);
 };
 
 function formDynGlobals() {

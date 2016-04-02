@@ -1,4 +1,7 @@
 //startup.js file
+function Home_callback_seq0() {
+    home.call(this);
+};
 var globalhttpheaders = {};
 var appConfig = {
     appId: "WidgetAlignment",
@@ -32,6 +35,7 @@ function setAppBehaviors() {
 };
 
 function themeCallBack() {
+    callAppMenu();
     kony.application.setApplicationInitializationEvents({
         init: appInit,
         showstartupform: function() {

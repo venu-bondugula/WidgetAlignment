@@ -146,3 +146,15 @@ function appmiddlewaresecureinvokerasyncForMBAAS(inputParam, serviceID, operatio
 function makeCall(eventobject) {
     kony.phone.dial(eventobject.text);
 };
+appMenu = null;
+
+function callAppMenu() {
+    var appMenu = [
+        ["Home", "Home", "home.png", Home_callback_seq0,
+        {
+            "showAsFlag": constants.MENUITEM_SHOW_AS_ACTION_NEVER
+        }]
+    ];
+    kony.application.createAppMenu("WidgetAlignmentAppMenu", appMenu, null, null);
+    kony.application.setCurrentAppMenu("WidgetAlignmentAppMenu");
+}
