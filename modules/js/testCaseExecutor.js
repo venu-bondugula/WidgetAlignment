@@ -36,26 +36,8 @@ function createList() {
     formHome.TestCases.text += testcases;
 }
 
-var testcaseParams = {
-    priority: undefined,
-    type: undefined
-};
-
-var frmParams = {
-    frmname: undefined,
-    skin: "skn1",
-    caseID: undefined
-};
-
-
-function sample() {
-	formHome.TestCases.text = constants.WIDGET_ALIGN_TOP_LEFT.toString();
-	  							
-
-}
 function testcaseNavigator() {
-
-/*	formDyn.destroy();
+	formDyn.destroy();
 	formDyn.postShow = null;
 	formDyn.preShow = null;
     if (formHome['TestCaseID'].text != null){
@@ -63,12 +45,9 @@ function testcaseNavigator() {
     }else{
     	alert("TestID is null");
     }
-    frmParams.frmname = formDyn;
-    frmParams.caseID = testID;
 
     testID_num = parseInt(testID);
-    frmParams.frmname.TestCaseTitle.text = obj[(testID_num).toString()];
-    frmParams = testcase(frmParams, obj);
-    frmParams.frmname.skin = "frmskn";
-    frmParams.frmname.show();*/
+    testcase(obj[testID]);
+    formDyn.skin = "skn1";
+    formDyn.show();
 }
