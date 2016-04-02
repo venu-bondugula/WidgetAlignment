@@ -772,7 +772,7 @@
         <desktopweb_draggable>false</desktopweb_draggable>
         <desktopweb_minonlostfocus>false</desktopweb_minonlostfocus>
         <children xsi:type="kLabel">
-            <ID>label685085079821</ID>
+            <ID>testCaseTitle</ID>
             <gridMetaData>
                 <colSpan>1</colSpan>
                 <column>0</column>

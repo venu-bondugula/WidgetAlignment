@@ -739,4 +739,48 @@ var button181322389719567 = new kony.ui.Button({
     vbox.add(
     vbox1);
   
-  
+function createHbox(hboxID) {
+    var hboxID = new kony.ui.Box({
+        "id": hboxID,
+        "isVisible": true,
+        "position": constants.BOX_POSITION_AS_NORMAL,
+        "orientation": constants.BOX_LAYOUT_HORIZONTAL,
+        "skin":"hboxskn"
+    }, {
+        "containerHeight": 100,
+        "containerWeight": 100,
+        "percent": true,
+        "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT,
+        "margin": [0, 0, 0, 0],
+        "padding": [0, 0, 0, 0],
+        "vExpand": false,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "layoutType": constants.CONTAINER_LAYOUT_BOX
+    }, {});
+    return hboxID;
+}
+
+
+function createButton(buttonID) {
+    buttonID = new kony.ui.Button({
+        "id": buttonID,
+        "isVisible": true,
+        "text": "Navigate to next testcase",
+        "skin": "btnSkin",
+        "focusSkin": "btnFocus",
+        "onClick": nextTestCase
+    }, {
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
+        "vExpand": false,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "padding": [0, 3, 0, 3],
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "containerWeight": 40
+    }, {});
+    return buttonID;
+}

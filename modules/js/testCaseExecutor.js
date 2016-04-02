@@ -51,3 +51,22 @@ function testcaseNavigator() {
     formDyn.skin = "skn1";
     formDyn.show();
 }
+
+function nextTestCase(){
+	if(obj.testID.widgetAlignment != 9){
+		obj.testID.widgetAlignment = obj.testID.widgetAlignment + 1;
+	}
+	else
+	{
+		home();
+	}
+}
+
+function home()
+{
+	currentForm=kony.application.getCurrentForm();
+	frmHome.show();
+	if(currentForm!=frmHome){
+		currentForm.destroy();
+	}
+}
