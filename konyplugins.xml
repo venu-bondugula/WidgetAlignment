@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugins>
+    <pluginInfo version-no="5.6.5.GA_v201602101336_r6" plugin-id="com.pat.tool.keditor.KEditorPlugin" plugin-name="Kony Studio"/>
+    <pluginInfo version-no="5.6.5.GA_v201504081540" plugin-name="Third Party Jars Plug-in"/>
+    <pluginInfo version-no="5.6.5.GA_v201504081540" plugin-id="com.pat.soapui.SoapUIPlugin" plugin-name="Soap UI Plugin"/>
+    <pluginInfo version-no="5.6.5.GA_v201512031208_r5" plugin-name="Kony Codegenerator"/>
+    <pluginInfo version-no="5.6.5.GA_v201504091304" plugin-id="com.kony.help.Activator" plugin-name="KonyHelp Plug-in"/>
+    <pluginInfo version-no="5.6.5.GA_v201504081602" plugin-id="com.kony.nativecodegen.NativeCodeGenPlugin" plugin-name="Nativecodegen"/>
+    <pluginInfo version-no="5.6.5.GA_v201504081540" plugin-name="Kony Studio Licensing"/>
+    <pluginInfo version-no="5.6.4.GA_v201505121351_r1" plugin-id="com.kony.cloudmiddleware.Activator" plugin-name="CloudMiddlewarePlugin"/>
+    <pluginInfo version-no="5.6.4.GA_v201505121351_r1" plugin-id="com.kony.cloudthirdparty.Activator" plugin-name="CloudThirdPartyPlugin"/>
+    <pluginInfo version-no="5.6.5.GA_v201504091640" plugin-id="com.viz.ide.VisualiserIDEPlugin" plugin-name="Visualizer Integration Plugin"/>
+    <pluginInfo version-no="5.6.5.GA_v201504091612" plugin-id="com.kony.studio.cloud.StudioCloudPlugin" plugin-name="Kony Studio Cloud Integration"/>
+    <pluginInfo version-no="5.6.5.GA_v201504091655" plugin-id="com.kony.studio.sky.SkyPlugin" plugin-name="Sky Data Explorer"/>
+    <pluginInfo version-no="5.6.1.GA_v201406041847" plugin-name="Functional Preview Plugin"/>
+    <pluginInfo version-no="5.6.5.GA_v201603032012_r9" plugin-id="com.pat.android.Activator" plugin-name="Tablet Android"/>
+    <pluginInfo version-no="5.6.5.GA_v201504091253" plugin-id="com.pat.j2me.J2MEPlugin" plugin-name="Blackberry &amp; J2ME"/>
+    <pluginInfo version-no="5.6.5.GA_v201509091431_r5" plugin-id="com.kony.bb10.BB10Plugin" plugin-name="Blackberry 10"/>
+    <pluginInfo version-no="5.6.5.GA_v201511161702_r3" plugin-id="com.pat.winmobile.WinMobilePlugin" plugin-name="Winmobile Plug-in"/>
+    <pluginInfo version-no="5.6.5.GA_v201602181555_r27" plugin-id="com.kony.windows.WindowsPhone8Plugin" plugin-name="Windows Phone 8 Plug-in"/>
+    <pluginInfo version-no="5.6.5.GA_v201603151839_r16" plugin-id="com.kony.windows.Windows8Plugin" plugin-name="Windows 8.1 Plug-in"/>
+    <pluginInfo version-no="5.6.5.GA_v201603032012_r9" plugin-id="com.pat.android.Activator" plugin-name="Android"/>
+    <pluginInfo version-no="5.6.5.GA_v201505211008_r1" plugin-id="thinclientplugin.Activator" plugin-name="ThinClient"/>
+    <pluginInfo version-no="5.6.5.GA_v201601281117_r10" plugin-id="com.kony.windows.WinDesktopPlugin" plugin-name="Windows Desktop Plug-in"/>
+    <pluginInfo version-no="5.6.5.GA_v201512031130_r9" plugin-name="SPA"/>
+    <pluginInfo version-no="5.6.5.GA_v201601201532_r9" plugin-name="Desktop Web"/>
+    <pluginInfo version-no="5.6.4.GA_v201602101907_r9" plugin-id="com.kony.sync.ide.SyncPlugin" plugin-name="Kony Sync"/>
+    <pluginInfo version-no="5.6.5.GA_v201504091609" plugin-id="com.kony.web.Activator" plugin-name="Kony Web Commons"/>
+    <pluginInfo version-no="5.6.5.GA_v201601290905_r15" plugin-id="iosplugin.Activator" plugin-name="iOS Plugin"/>
+</plugins>
