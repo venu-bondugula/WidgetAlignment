@@ -1,7 +1,7 @@
     var Browser = new kony.ui.Browser({
         "detectTelNumber": true,
         "enableZoom": false,
-        "id": "wid1",
+        "id": "Browser",
         "isVisible": true,
         "requestURLConfig": {
             "URL": "http://stargate.konylabs.net/testpages/form.html",
@@ -19,7 +19,7 @@
     
     var Button = new kony.ui.Button({
         "focusSkin": "btnFocus",
-        "id": "wid1",
+        "id": "Button",
         "isVisible": true,
         "skin": "btnNormal",
         "text": "Button"
@@ -38,7 +38,7 @@
     var Camera = new kony.ui.Camera({
         "compressionLevel": 0,
         "focusSkin": "camFocus",
-        "id": "wid1",
+        "id": "Camera",
         "isVisible": true,
         "scaleFactor": 80,
         "skin": "camNormal",
@@ -62,7 +62,7 @@
     });
        var CheckBoxGroup = new kony.ui.CheckBoxGroup({
         "focusSkin": "cbxFocus",
-        "id": "wid1",
+        "id": "CheckBoxGroup",
         "isVisible": true,
         "masterData": [
             ["1", "1"],
@@ -87,7 +87,7 @@
 
     var ComboBox = new kony.ui.ComboBox({
         "focusSkin": "cboxFocus",
-        "id": "wid1",
+        "id": "ComboBox",
         "isVisible": true,
         "masterData": [
             ["one", "one"],
@@ -149,7 +149,7 @@
             "C": "9"
         }],
         "headerSkin": "dgHead",
-        "id": "wid1",
+        "id": "DataGrid",
         "info": {},
         "isMultiSelect": false,
         "isVisible": true,
@@ -169,7 +169,7 @@
         "gridlineColor": "5c5c5c00"
     });
     
-    
+    //is this button for getting the next alignment ? ---- VENU!?
     var button181322389717088 = new kony.ui.Button({
         "focusSkin": "btnFocus",
         "id": "button181322389717088",
@@ -189,7 +189,7 @@
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
     var HBox = new kony.ui.Box({
-        "id": "wid1",
+        "id": "Box",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_HORIZONTAL,
         "position": constants.BOX_POSITION_AS_NORMAL
@@ -263,7 +263,7 @@
     
     
     var Label = new kony.ui.Label({
-        "id": "wid1",
+        "id": "Label",
         "isVisible": true,
         "skin": "lblNormal",
         "text": "Label"
@@ -282,7 +282,7 @@
     });
   	
   	var Line = new kony.ui.Line({
-        "id": "wid1",
+        "id": "Line",
         "isVisible": true,
         "skin": "lineNormal"
     }, {
@@ -293,7 +293,7 @@
     }, {});
     
     var Link = new kony.ui.Link({
-        "id": "wid1",
+        "id": "Link",
         "isVisible": true,
         "skin": "skinblue",
         "text": "Link"
@@ -311,7 +311,7 @@
    
    var ListBox = new kony.ui.ListBox({
         "focusSkin": "listboxFocus",
-        "id": "wid1",
+        "id": "ListBox",
         "isVisible": true,
         "masterData": [
             ["1", "1"],
@@ -339,6 +339,7 @@
         "untickedImage": null,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
+   //duplicate button ? --- VENU !?
     
     var Phone = new kony.ui.Button({
         "focusSkin": "phoneFocus",
@@ -359,7 +360,7 @@
     }, {});
     
     var wid1box = new kony.ui.Box({
-        "id": "wid1box",
+        "id": "Box",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_VERTICAL
     }, {
@@ -375,7 +376,7 @@
             "label181322389713097": "label3"
         }],
         "groupCells": false,
-        "id": "wid1",
+        "id": "SegmentedUI2",
         "isVisible": true,
         "layoutType": null,
         "Location": "[1,1]",
@@ -427,7 +428,7 @@
     
     
     var PickerView = new kony.ui.PickerView({
-        "id": "wid1",
+        "id": "PickerView",
         "isVisible": true,
         "masterData": [
             [
@@ -493,6 +494,8 @@
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
     
+
+    //duplicate button ??? : VENU!?
     var button181322389719561 = new kony.ui.Button({
         "focusSkin": "btnFocus",
         "id": "button181322389719561",
@@ -511,9 +514,11 @@
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
+
+
     var ScrollBox = new kony.ui.ScrollBox({
         "enableScrollByPage": false,
-        "id": "wid1",
+        "id": "ScrollBox",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_HORIZONTAL,
         "position": constants.BOX_POSITION_AS_NORMAL,
@@ -532,7 +537,7 @@
   
   var Slider = new kony.ui.Slider({
         "focusThumbImage": null,
-        "id": "wid1",
+        "id": "Slider",
         "isVisible": true,
         "max": 100,
         "min": 0,
@@ -557,7 +562,7 @@
         "activeFocusSkin": "tabFocus",
         "activeSkin": "tabActive",
         "activeTabs": null,
-        "id": "wid1",
+        "id": "TabPane",
         "inactiveSkin": "tabInactive",
         "isVisible": true,
         "screenLevelWidget": false,
@@ -593,6 +598,8 @@
     }, {
         "tabHeaderHeight": 64
     });
+
+    //duplicate ?? : VENU!?
     var wid3 = new kony.ui.Box({
         "id": "wid3",
         "isVisible": true,
@@ -635,7 +642,7 @@
     var TextArea = new kony.ui.TextArea2({
         "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
         "focusSkin": "txt2Focus",
-        "id": "wid1",
+        "id": "TextArea",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
         "maxTextLength": null,
@@ -660,7 +667,7 @@
     var TextBox = new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
         "focusSkin": "tbx2Focus",
-        "id": "wid1",
+        "id": "TextBox",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
         "placeholder": null,
@@ -704,7 +711,7 @@ var button181322389719567 = new kony.ui.Button({
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
     var vbox1 = new kony.ui.Box({
-        "id": "vbox1",
+        "id": "VBox",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_VERTICAL
     }, {
