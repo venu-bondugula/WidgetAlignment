@@ -1,4 +1,3 @@
-//this is random
 
 function testcase(testObj) {
 
