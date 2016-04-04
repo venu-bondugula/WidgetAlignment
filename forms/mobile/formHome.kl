@@ -2878,7 +2878,7 @@
                             <functionNameMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>sample</value>
+                                    <value>testcaseNavigator</value>
                                 </entry>
                                 <entry>
                                     <key>lua</key>

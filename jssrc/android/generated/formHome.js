@@ -4,7 +4,7 @@ function formHome_formHome_preshow_seq0(eventobject, neworientation) {
 };
 
 function formHome_button685085079818_onClick_seq0(eventobject) {
-    sample.call(this);
+    testcaseNavigator.call(this);
 };
 
 function addWidgetsformHome() {

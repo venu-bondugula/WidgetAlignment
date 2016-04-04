@@ -1,7 +1,7 @@
     var Browser = new kony.ui.Browser({
         "detectTelNumber": true,
         "enableZoom": false,
-        "id": "wid1",
+        "id": "Browser",
         "isVisible": true,
         "requestURLConfig": {
             "URL": "http://stargate.konylabs.net/testpages/form.html",
@@ -18,32 +18,32 @@
     }, {});
     var Button = new kony.ui.Button({
         "focusSkin": "btnFocus",
-        "id": "wid1",
+        "id": "Button",
         "isVisible": true,
         "skin": "btnNormal",
         "text": "Button"
     }, {
-        "containerWeight": 6,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
-        "hExpand": true,
+        "hExpand": false,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
-        "padding": [0, 3, 0, 3],
+        "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var Camera = new kony.ui.Camera({
         "compressionLevel": 0,
         "focusSkin": "camFocus",
-        "id": "wid1",
+        "id": "Camera",
         "isVisible": true,
         "scaleFactor": 80,
         "skin": "camNormal",
         "text": "camera1"
     }, {
-        "containerWeight": 8,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -51,7 +51,7 @@
         "padding": [0, 3, 0, 3],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "accessMode": constants.CAMERA_IMAGE_ACCESS_MODE_PUBLIC,
         "enableOverlay": false,
@@ -61,7 +61,7 @@
     });
     var CheckBoxGroup = new kony.ui.CheckBoxGroup({
         "focusSkin": "cbxFocus",
-        "id": "wid1",
+        "id": "CheckBoxGroup",
         "isVisible": true,
         "masterData": [
             ["1", "1"],
@@ -72,20 +72,20 @@
         "selectedKeys": [],
         "skin": "cbxNormal"
     }, {
-        "containerWeight": 4,
+        "containerWeight": 100,
         "itemOrientation": constants.CHECKBOX_ITEM_ORIENTATION_VERTICAL,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "tickedImage": null,
         "untickedImage": null
     });
     var ComboBox = new kony.ui.ComboBox({
         "focusSkin": "cboxFocus",
-        "id": "wid1",
+        "id": "ComboBox",
         "isVisible": true,
         "masterData": [
             ["one", "one"],
@@ -94,7 +94,7 @@
         ],
         "skin": "cboxNormal"
     }, {
-        "containerWeight": 5,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -102,7 +102,7 @@
         "padding": [0, 1, 0, 1],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "popupTitle": null
     });
@@ -146,7 +146,7 @@
             "C": "9"
         }],
         "headerSkin": "dgHead",
-        "id": "wid1",
+        "id": "DataGrid",
         "info": {},
         "isMultiSelect": false,
         "isVisible": true,
@@ -155,13 +155,13 @@
         "rowNormalSkin": "dgRow",
         "showColumnHeaders": true
     }, {
-        "containerWeight": 26,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "gridlineColor": "5c5c5c00"
     });
@@ -181,15 +181,15 @@
         "padding": [0, 3, 0, 3],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var HBox = new kony.ui.Box({
-        "id": "wid1",
+        "id": "HBox",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_HORIZONTAL,
         "position": constants.BOX_POSITION_AS_NORMAL
     }, {
-        "containerWeight": 11,
+        "containerWeight": 100,
         "layoutType": constants.CONTAINER_LAYOUT_BOX,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
@@ -211,7 +211,7 @@
                 "iurl": "smallimage.png"
             }], "iurl"],
         "focusSkin": "hStrip2Focus",
-        "id": "wid1",
+        "id": "HzImageStrip",
         "imageWhenFailed": null,
         "imageWhileDownloading": null,
         "isVisible": true,
@@ -226,7 +226,7 @@
         },
         "viewType": constants.HORIZONTAL_IMAGESTRIP_VIEW_TYPE_STRIPVIEW
     }, {
-        "containerWeight": 9,
+        "containerWeight": 100,
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
@@ -234,16 +234,16 @@
         "paddingInPixel": false,
         "referenceHeight": 50,
         "referenceWidth": 50,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var Image = new kony.ui.Image2({
-        "id": "wid1",
+        "id": "Image",
         "imageWhenFailed": null,
         "imageWhileDownloading": null,
         "isVisible": true,
-        "src": "img4.png"
+        "src": "dollar.png"
     }, {
-        "containerWeight": 6,
+        "containerWeight": 100,
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
@@ -251,15 +251,15 @@
         "paddingInPixel": false,
         "referenceHeight": null,
         "referenceWidth": null,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var Label = new kony.ui.Label({
-        "id": "wid1",
+        "id": "Label",
         "isVisible": true,
         "skin": "lblNormal",
         "text": "Label"
     }, {
-        "containerWeight": 6,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -267,12 +267,12 @@
         "padding": [1, 1, 1, 1],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "textCopyable": false
     });
     var Line = new kony.ui.Line({
-        "id": "wid1",
+        "id": "Line",
         "isVisible": true,
         "skin": "lineNormal"
     }, {
@@ -282,12 +282,12 @@
         "thickness": 1
     }, {});
     var Link = new kony.ui.Link({
-        "id": "wid1",
+        "id": "Link",
         "isVisible": true,
         "skin": "skinblue",
         "text": "Link"
     }, {
-        "containerWeight": 6,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -295,11 +295,11 @@
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var ListBox = new kony.ui.ListBox({
         "focusSkin": "listboxFocus",
-        "id": "wid1",
+        "id": "ListBox",
         "isVisible": true,
         "masterData": [
             ["1", "1"],
@@ -308,7 +308,7 @@
         ],
         "skin": "listboxNormal"
     }, {
-        "containerWeight": 7,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -316,7 +316,7 @@
         "padding": [0, 1, 0, 1],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "applySkinsToPopup": true,
         "dropDownImage": null,
@@ -329,12 +329,12 @@
     });
     var Phone = new kony.ui.Button({
         "focusSkin": "phoneFocus",
-        "id": "wid1",
+        "id": "Phone",
         "isVisible": true,
         "skin": "phoneNormal",
         "text": "Phone1"
     }, {
-        "containerWeight": 6,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -342,7 +342,7 @@
         "padding": [0, 3, 0, 3],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var wid1box = new kony.ui.Box({
         "id": "wid1box",
@@ -350,7 +350,7 @@
         "orientation": constants.BOX_LAYOUT_VERTICAL
     }, {
         "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
-        "containerWeight": 34
+        "containerWeight": 100
     }, {});
     var Segment = new kony.ui.SegmentedUI2({
         "data": [{
@@ -361,7 +361,7 @@
             "label181322389713097": "label3"
         }],
         "groupCells": false,
-        "id": "wid1",
+        "id": "Segment",
         "isVisible": true,
         "layoutType": null,
         "Location": "[1,1]",
@@ -382,7 +382,7 @@
         }
     }, {
         "containerHeight": null,
-        "containerWeight": 34,
+        "containerWeight": 100,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
         "padding": [0, 0, 0, 0],
@@ -403,14 +403,14 @@
         "padding": [1, 1, 1, 1],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "textCopyable": false
     });
     wid1box.add(
     label181322389713097);
     var PickerView = new kony.ui.PickerView({
-        "id": "wid1",
+        "id": "PickerView",
         "isVisible": true,
         "masterData": [
             [
@@ -425,17 +425,17 @@
                 ["4", "4"], 100]
         ]
     }, {
-        "containerWeight": 17,
+        "containerWeight": 100,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var RadioButton = new kony.ui.RadioButtonGroup({
         "focusSkin": "radioFocus",
-        "id": "wid1",
+        "id": "RadioButton",
         "isVisible": true,
         "masterData": [
             ["1", "1"],
@@ -444,7 +444,7 @@
         ],
         "skin": "radioNormal"
     }, {
-        "containerWeight": 4,
+        "containerWeight": 100,
         "hExpand": true,
         "itemOrientation": constants.RADIOGROUP_ITEM_ORIENTATION_VERTICAL,
         "margin": [0, 0, 0, 0],
@@ -452,18 +452,18 @@
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "tickedImage": null,
         "untickedImage": null
     });
     var RichText = new kony.ui.RichText({
-        "id": "1",
+        "id": "RichText",
         "isVisible": true,
         "skin": "richNormal",
         "text": "Text"
     }, {
-        "containerWeight": 10,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -471,7 +471,7 @@
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var button181322389719561 = new kony.ui.Button({
         "focusSkin": "btnFocus",
@@ -489,11 +489,11 @@
         "padding": [0, 3, 0, 3],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var ScrollBox = new kony.ui.ScrollBox({
         "enableScrollByPage": false,
-        "id": "wid1",
+        "id": "ScrollBox",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_HORIZONTAL,
         "position": constants.BOX_POSITION_AS_NORMAL,
@@ -510,7 +510,7 @@
     button181322389719561);
     var Slider = new kony.ui.Slider({
         "focusThumbImage": null,
-        "id": "wid1",
+        "id": "Slider",
         "isVisible": true,
         "max": 100,
         "min": 0,
@@ -518,13 +518,13 @@
         "step": 1,
         "thumbImage": null
     }, {
-        "containerWeight": 6,
+        "containerWeight": 100,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "maxLabel": null,
         "minLabel": null,
@@ -534,7 +534,7 @@
         "activeFocusSkin": "tabFocus",
         "activeSkin": "tabActive",
         "activeTabs": null,
-        "id": "wid1",
+        "id": "TabPane",
         "inactiveSkin": "tabInactive",
         "isVisible": true,
         "screenLevelWidget": false,
@@ -561,7 +561,7 @@
         "viewType": constants.TABPANE_VIEW_TYPE_TABVIEW
     }, {
         "containerHeight": null,
-        "containerWeight": 23,
+        "containerWeight": 100,
         "layoutType": constants.CONTAINER_LAYOUT_BOX,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
@@ -603,7 +603,7 @@
         "padding": [0, 3, 0, 3],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     wid3.add(
     button181322389719565);
@@ -611,7 +611,7 @@
     var TextArea = new kony.ui.TextArea2({
         "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
         "focusSkin": "txt2Focus",
-        "id": "wid1",
+        "id": "TextArea",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
         "maxTextLength": null,
@@ -621,7 +621,7 @@
         "text": "TextArea2",
         "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY
     }, {
-        "containerWeight": 10,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -629,12 +629,12 @@
         "padding": [1, 1, 1, 1],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var TextBox = new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
         "focusSkin": "tbx2Focus",
-        "id": "wid1",
+        "id": "TextBox",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
         "placeholder": null,
@@ -644,7 +644,7 @@
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
-        "containerWeight": 6,
+        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
@@ -652,7 +652,7 @@
         "padding": [1, 1, 1, 1],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {
         "autoFilter": false,
         "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DEFAULT,
@@ -674,14 +674,14 @@
         "padding": [0, 3, 0, 3],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "widgetAlignment": 1
     }, {});
     var vbox1 = new kony.ui.Box({
         "id": "vbox1",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_VERTICAL
     }, {
-        "containerWeight": 40,
+        "containerWeight": 100,
         "hExpand": true,
         "layoutType": constants.CONTAINER_LAYOUT_BOX,
         "margin": [0, 0, 0, 0],
@@ -694,12 +694,12 @@
     vbox1.add(
     button181322389719567);
     var vbox = new kony.ui.Box({
-        "id": "wid1",
+        "id": "vbox",
         "isVisible": true,
         "orientation": constants.BOX_LAYOUT_HORIZONTAL,
         "position": constants.BOX_POSITION_AS_NORMAL
     }, {
-        "containerWeight": 11,
+        "containerWeight": 100,
         "layoutType": constants.CONTAINER_LAYOUT_BOX,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
@@ -718,7 +718,7 @@
             "isVisible": true,
             "position": constants.BOX_POSITION_AS_NORMAL,
             "orientation": constants.BOX_LAYOUT_HORIZONTAL,
-            "skin": "hboxskn"
+            "skin": "hBox"
         }, {
             "containerHeight": 100,
             "containerWeight": 100,
@@ -743,7 +743,7 @@
             "focusSkin": "btnFocus",
             "onClick": nextTestCase
         }, {
-            "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
+            "widgetAlignment": 1,
             "vExpand": false,
             "hExpand": true,
             "margin": [1, 1, 1, 1],
@@ -755,4 +755,25 @@
             "containerWeight": 40
         }, {});
         return buttonID;
+    }
+
+    function createImage(image) {
+        image = new kony.ui.Image2({
+            "id": image,
+            "isVisible": true,
+            "src": "dollar123.png",
+            "imageWhenFailed": null,
+            "imageWhileDownloading": null
+        }, {
+            "widgetAlignment": constants.WIDGET_ALIGN_MIDDLE_RIGHT,
+            "margin": [0, 0, 0, 0],
+            "padding": [0, 0, 0, 0],
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "referenceWidth": null,
+            "referenceHeight": null,
+            "marginInPixel": false,
+            "paddingInPixel": false,
+            "containerWeight": 40
+        }, {});
+        return image;
     }

@@ -1,7 +1,11 @@
 var testID = 0;
 var obj = {
-	"1":Browser,
-	"2":Button,
+	"1":{"name":Browser,
+		 "id":"Browser"
+		},
+	"2":{"name":Button,
+		 "align":formDyn.Button.widgetAlignment
+		},
 	"3":Camera,
 	"4":CheckBoxGroup,
 	"5":ComboBox,
@@ -27,6 +31,7 @@ var obj = {
 	"25":TextBox
 };
 
+var a = 1;
 function createList() {
     testcases = "TestCases for Widget Alignment" + "\n\n";
 /*    for (index in obj) {
@@ -48,16 +53,18 @@ function testcaseNavigator() {
 
     testID_num = parseInt(testID);
     testcase(obj[testID]);
-    formDyn.skin = "skn1";
+    formDyn.skin = "skin1";
     formDyn.show();
 }
 
 function nextTestCase(){
-	if(obj.testID.widgetAlignment != 9){
-		obj.testID.widgetAlignment = obj.testID.widgetAlignment + 1;
+	if(a != 9){
+		a++;
+		obj[testID].widgetAlignment = a;
 	}
 	else
 	{
+		a = 1;
 		home();
 	}
 }
@@ -65,8 +72,8 @@ function nextTestCase(){
 function home()
 {
 	currentForm=kony.application.getCurrentForm();
-	frmHome.show();
-	if(currentForm!=frmHome){
+	formHome.show();
+	if(currentForm!=formHome){
 		currentForm.destroy();
 	}
 }
