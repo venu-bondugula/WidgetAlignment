@@ -1,46 +1,113 @@
 var testID = 0;
 var obj = {
     "1": {
-        "name": Browser,
+        "widCreator": createBrowser,
         "id": "Browser"
     },
     "2": {
-        "name": Button,
-        "align": formDyn.Button.widgetAlignment
+        "widCreator": createButton,
+        "id": "Button"
     },
-    "3": Camera,
-    "4": CheckBoxGroup,
-    "5": ComboBox,
-    "6": DataGrid,
-    "7": HBox,
-    "8": HzImageStrip,
-    "9": Image,
-    "10": Label,
-    "11": Line,
-    "12": Link,
-    "13": ListBox,
-    "14": Map,
-    "15": Phone,
-    "16": PickerView,
-    "17": RadioButton,
-    "18": RichText,
-    "19": ScrollBox,
-    "20": Segment,
-    "21": Slider,
-    "22": Switch,
-    "23": TabPane,
-    "24": TextArea,
-    "25": TextBox
+    "3": {
+        "widCreator": createCamera,
+        "id": "Camera"
+    },
+    "4": {
+        "widCreator": createCheckBoxGroup,
+        "id": "CheckBoxGroup"
+    },
+    "5": {
+        "widCreator": createComboBox,
+        "id": "ComboBox"
+    },
+    "6": {
+        "widCreator": createDataGrid,
+        "id": "DataGrid"
+    },
+    "7": {
+        "widCreator": createHBox,
+        "id": "HBox"
+    },
+    "8": {
+        "widCreator": createHzImageStrip,
+        "id": "HzImageStrip"
+    },
+    "9": {
+        "widCreator": createImage,
+        "id": "Image"
+    },
+    "10": {
+        "widCreator": createLabel,
+        "id": "Label"
+    },
+    "11": {
+        "widCreator": createLine,
+        "id": "Line"
+    },
+    "12": {
+        "widCreator": createLink,
+        "id": "Link"
+    },
+    "13": {
+        "widCreator": createListBox,
+        "id": "ListBox"
+    },
+    "14": {
+        "widCreator": createMap,
+        "id": "Map"
+    },
+    "15": {
+        "widCreator": createPhone,
+        "id": "Phone"
+    },
+    "16": {
+        "widCreator": createPickerView,
+        "id": "PickerView"
+    },
+    "17": {
+        "widCreator": createRadioButton,
+        "id": "RadioButton"
+    },
+    "18": {
+        "widCreator": createRichText,
+        "id": "RichText"
+    },
+    "19": {
+        "widCreator": createScrollBox,
+        "id": "ScrollBox"
+    },
+    "20": {
+        "widCreator": createSegment,
+        "id": "Segment"
+    },
+    "21": {
+        "widCreator": createSlider,
+        "id": "Slider"
+    },
+    "22": {
+        "widCreator": createSwitch,
+        "id": "Switch"
+    },
+    "23": {
+        "widCreator": createTabPane,
+        "id": "TabPane"
+    },
+    "24": {
+        "widCreator": createTextArea,
+        "id": "TextArea"
+    },
+    "25": {
+        "widCreator": createTextBox,
+        "id": "TextBox"
+    }
 };
-var a = 1;
 
 function createList() {
     testcases = "TestCases for Widget Alignment" + "\n\n";
-    /*    for (index in obj) {
-        testcases += index + " : " + obj[index].toString() + "\n\n";
-    }*/
-    formHome.TestCases.text = obj["1"] + "\n\n";
-    formHome.TestCases.text += testcases;
+    for (index in obj) {
+        testcases += index + " : " + obj[index].id + "\n\n";
+    }
+    formHome.TestCases.text = testcases;
 }
 
 function testcaseNavigator() {
@@ -53,22 +120,32 @@ function testcaseNavigator() {
         alert("TestID is null");
     }
     testID_num = parseInt(testID);
-    testcase(obj[testID]);
+    testObj = obj[testID].widCreator.call();
+    testcase(testObj);
     formDyn.skin = "skin1";
     formDyn.show();
 }
 
 function nextTestCase() {
-    if (a != 9) {
-        a++;
-        obj[testID].widgetAlignment = a;
+    if (alignment != 9) {
+        alignment++;
+        /*		formDyn.remove("hbox");
+		formDyn.remove("refImageWidget");
+	    formDyn.remove(obj[testID].id);
+	    hbox = createHbox("hbox"); 	        
+    	imagewidget = createImage("refImageWidget");
+    	hbox.add(testObj, imagewidget);
+    	formDyn.add(hbox);
+    	*/
+        testcaseNavigator();
     } else {
-        a = 1;
+        alignment = 1;
         home();
     }
 }
 
 function home() {
+    alignment = 1;
     currentForm = kony.application.getCurrentForm();
     formHome.show();
     if (currentForm != formHome) {

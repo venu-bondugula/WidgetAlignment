@@ -1,4 +1,7 @@
-    var Browser = new kony.ui.Browser({
+var alignment = 1;
+
+function createBrowser() {
+    return new kony.ui.Browser({
         "detectTelNumber": true,
         "enableZoom": false,
         "id": "Browser",
@@ -16,7 +19,10 @@
         "marginInPixel": false,
         "paddingInPixel": false
     }, {});
-    var Button = new kony.ui.Button({
+}
+
+function createButton() {
+    return new kony.ui.Button({
         "focusSkin": "btnFocus",
         "id": "Button",
         "isVisible": true,
@@ -32,9 +38,12 @@
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false,
         "vExpand": false,
-        "widgetAlignment": 1
+        "widgetAlignment": alignment
     }, {});
-    var Camera = new kony.ui.Camera({
+}
+
+function createCamera() {
+    return new kony.ui.Camera({
         "compressionLevel": 0,
         "focusSkin": "camFocus",
         "id": "Camera",
@@ -59,7 +68,10 @@
             "tapAnywhere": false
         }
     });
-    var CheckBoxGroup = new kony.ui.CheckBoxGroup({
+}
+
+function createCheckBoxGroup() {
+    return new kony.ui.CheckBoxGroup({
         "focusSkin": "cbxFocus",
         "id": "CheckBoxGroup",
         "isVisible": true,
@@ -83,7 +95,10 @@
         "tickedImage": null,
         "untickedImage": null
     });
-    var ComboBox = new kony.ui.ComboBox({
+}
+
+function createComboBox() {
+    return new kony.ui.ComboBox({
         "focusSkin": "cboxFocus",
         "id": "ComboBox",
         "isVisible": true,
@@ -106,7 +121,10 @@
     }, {
         "popupTitle": null
     });
-    var DataGrid = new kony.ui.DataGrid({
+}
+
+function createDataGrid() {
+    return new kony.ui.DataGrid({
         "columnHeadersConfig": [{
             "columnContentAlignment": constants.CONTENT_ALIGN_CENTER,
             "columnOnClick": null,
@@ -165,6 +183,9 @@
     }, {
         "gridlineColor": "5c5c5c00"
     });
+}
+
+function createHBox() {
     var button181322389717088 = new kony.ui.Button({
         "focusSkin": "btnFocus",
         "id": "button181322389717088",
@@ -201,7 +222,11 @@
     }, {});
     HBox.add(
     button181322389717088);
-    var HzImageStrip = new kony.ui.HorizontalImageStrip2({
+    return HBox;
+}
+
+function createHzImageStrip() {
+    return new kony.ui.HorizontalImageStrip2({
         "data": [
             [{
                 "iurl": "smallimage.png"
@@ -236,7 +261,10 @@
         "referenceWidth": 50,
         "widgetAlignment": 1
     }, {});
-    var Image = new kony.ui.Image2({
+}
+
+function createImage() {
+    return new kony.ui.Image2({
         "id": "Image",
         "imageWhenFailed": null,
         "imageWhileDownloading": null,
@@ -253,7 +281,10 @@
         "referenceWidth": null,
         "widgetAlignment": 1
     }, {});
-    var Label = new kony.ui.Label({
+}
+
+function createLabel() {
+    return new kony.ui.Label({
         "id": "Label",
         "isVisible": true,
         "skin": "lblNormal",
@@ -271,7 +302,10 @@
     }, {
         "textCopyable": false
     });
-    var Line = new kony.ui.Line({
+}
+
+function createLine() {
+    return new kony.ui.Line({
         "id": "Line",
         "isVisible": true,
         "skin": "lineNormal"
@@ -281,7 +315,10 @@
         "paddingInPixel": false,
         "thickness": 1
     }, {});
-    var Link = new kony.ui.Link({
+}
+
+function createLink() {
+    return new kony.ui.Link({
         "id": "Link",
         "isVisible": true,
         "skin": "skinblue",
@@ -297,7 +334,10 @@
         "vExpand": false,
         "widgetAlignment": 1
     }, {});
-    var ListBox = new kony.ui.ListBox({
+}
+
+function createListBox() {
+    return new kony.ui.ListBox({
         "focusSkin": "listboxFocus",
         "id": "ListBox",
         "isVisible": true,
@@ -327,7 +367,10 @@
         "untickedImage": null,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
-    var Phone = new kony.ui.Button({
+}
+
+function createPhone() {
+    return new kony.ui.Button({
         "focusSkin": "phoneFocus",
         "id": "Phone",
         "isVisible": true,
@@ -344,15 +387,10 @@
         "vExpand": false,
         "widgetAlignment": 1
     }, {});
-    var wid1box = new kony.ui.Box({
-        "id": "wid1box",
-        "isVisible": true,
-        "orientation": constants.BOX_LAYOUT_VERTICAL
-    }, {
-        "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
-        "containerWeight": 100
-    }, {});
-    var Segment = new kony.ui.SegmentedUI2({
+}
+
+function createSegment() {
+    return new kony.ui.SegmentedUI2({
         "data": [{
             "label181322389713097": "label1"
         }, {
@@ -388,8 +426,17 @@
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    var Map;
-    var Switch;
+}
+
+function createwid1box() {
+    var wid1box = new kony.ui.Box({
+        "id": "wid1box",
+        "isVisible": true,
+        "orientation": constants.BOX_LAYOUT_VERTICAL
+    }, {
+        "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
+        "containerWeight": 100
+    }, {});
     var label181322389713097 = new kony.ui.Label({
         "id": "label181322389713097",
         "isVisible": true,
@@ -409,7 +456,19 @@
     });
     wid1box.add(
     label181322389713097);
-    var PickerView = new kony.ui.PickerView({
+    return wid1box;
+}
+
+function createMap() {
+    var Map;
+}
+
+function createSwitch() {
+    var Switch;
+}
+
+function createPickerView() {
+    return new kony.ui.PickerView({
         "id": "PickerView",
         "isVisible": true,
         "masterData": [
@@ -433,7 +492,10 @@
         "vExpand": false,
         "widgetAlignment": 1
     }, {});
-    var RadioButton = new kony.ui.RadioButtonGroup({
+}
+
+function createRadioButton() {
+    return new kony.ui.RadioButtonGroup({
         "focusSkin": "radioFocus",
         "id": "RadioButton",
         "isVisible": true,
@@ -457,7 +519,10 @@
         "tickedImage": null,
         "untickedImage": null
     });
-    var RichText = new kony.ui.RichText({
+}
+
+function createRichText() {
+    return new kony.ui.RichText({
         "id": "RichText",
         "isVisible": true,
         "skin": "richNormal",
@@ -473,6 +538,9 @@
         "vExpand": false,
         "widgetAlignment": 1
     }, {});
+}
+
+function createScrollBox() {
     var button181322389719561 = new kony.ui.Button({
         "focusSkin": "btnFocus",
         "id": "button181322389719561",
@@ -508,7 +576,11 @@
     }, {});
     ScrollBox.add(
     button181322389719561);
-    var Slider = new kony.ui.Slider({
+    return ScrollBox;
+}
+
+function createSlider() {
+    return new kony.ui.Slider({
         "focusThumbImage": null,
         "id": "Slider",
         "isVisible": true,
@@ -530,6 +602,9 @@
         "minLabel": null,
         "thickness": null
     });
+}
+
+function createTabPane() {
     var TabPane = new kony.ui.TabPane({
         "activeFocusSkin": "tabFocus",
         "activeSkin": "tabActive",
@@ -608,7 +683,11 @@
     wid3.add(
     button181322389719565);
     TabPane.addTab("wid3", "Tab", null, wid3, null);
-    var TextArea = new kony.ui.TextArea2({
+    return TabPane;
+}
+
+function createTextArea() {
+    return new kony.ui.TextArea2({
         "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
         "focusSkin": "txt2Focus",
         "id": "TextArea",
@@ -631,7 +710,10 @@
         "vExpand": false,
         "widgetAlignment": 1
     }, {});
-    var TextBox = new kony.ui.TextBox2({
+}
+
+function createTextBox() {
+    return new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
         "focusSkin": "tbx2Focus",
         "id": "TextBox",
@@ -658,6 +740,9 @@
         "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DEFAULT,
         "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
     });
+}
+
+function createvbox() {
     var button181322389719567 = new kony.ui.Button({
         "focusSkin": "btnFocus",
         "id": "button181322389719567",
@@ -711,69 +796,47 @@
     }, {});
     vbox.add(
     vbox1);
+    return vbox;
+}
 
-    function createHbox(hboxID) {
-        var hboxID = new kony.ui.Box({
-            "id": hboxID,
-            "isVisible": true,
-            "position": constants.BOX_POSITION_AS_NORMAL,
-            "orientation": constants.BOX_LAYOUT_HORIZONTAL,
-            "skin": "hBox"
-        }, {
-            "containerHeight": 100,
-            "containerWeight": 100,
-            "percent": true,
-            "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT,
-            "margin": [0, 0, 0, 0],
-            "padding": [0, 0, 0, 0],
-            "vExpand": false,
-            "marginInPixel": false,
-            "paddingInPixel": false,
-            "layoutType": constants.CONTAINER_LAYOUT_BOX
-        }, {});
-        return hboxID;
-    }
+function createHbox(hboxID) {
+    var hboxID = new kony.ui.Box({
+        "id": hboxID,
+        "isVisible": true,
+        "position": constants.BOX_POSITION_AS_NORMAL,
+        "orientation": constants.BOX_LAYOUT_HORIZONTAL,
+        "skin": "hBox"
+    }, {
+        "containerHeight": 100,
+        "containerWeight": 100,
+        "percent": true,
+        "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT,
+        "margin": [0, 0, 0, 0],
+        "padding": [0, 0, 0, 0],
+        "vExpand": false,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "layoutType": constants.CONTAINER_LAYOUT_BOX
+    }, {});
+    return hboxID;
+}
 
-    function createButton(buttonID) {
-        buttonID = new kony.ui.Button({
-            "id": buttonID,
-            "isVisible": true,
-            "text": "Navigate to next testcase",
-            "skin": "btnSkin",
-            "focusSkin": "btnFocus",
-            "onClick": nextTestCase
-        }, {
-            "widgetAlignment": 1,
-            "vExpand": false,
-            "hExpand": true,
-            "margin": [1, 1, 1, 1],
-            "padding": [0, 3, 0, 3],
-            "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-            "displayText": true,
-            "marginInPixel": false,
-            "paddingInPixel": false,
-            "containerWeight": 40
-        }, {});
-        return buttonID;
-    }
-
-    function createImage(image) {
-        image = new kony.ui.Image2({
-            "id": image,
-            "isVisible": true,
-            "src": "dollar123.png",
-            "imageWhenFailed": null,
-            "imageWhileDownloading": null
-        }, {
-            "widgetAlignment": constants.WIDGET_ALIGN_MIDDLE_RIGHT,
-            "margin": [0, 0, 0, 0],
-            "padding": [0, 0, 0, 0],
-            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-            "referenceWidth": null,
-            "referenceHeight": null,
-            "marginInPixel": false,
-            "paddingInPixel": false,
-            "containerWeight": 40
-        }, {});
-        return image;
-    }
+function createImage() {
+    return new kony.ui.Image2({
+        "id": "image",
+        "isVisible": true,
+        "src": "dollar123.png",
+        "imageWhenFailed": null,
+        "imageWhileDownloading": null
+    }, {
+        "widgetAlignment": constants.WIDGET_ALIGN_MIDDLE_RIGHT,
+        "margin": [0, 0, 0, 0],
+        "padding": [0, 0, 0, 0],
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "referenceWidth": null,
+        "referenceHeight": null,
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        "containerWeight": 40
+    }, {});
+}
